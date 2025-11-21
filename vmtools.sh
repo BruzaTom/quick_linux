@@ -20,5 +20,16 @@ sudo pacman -S --needed --noconfirm \
 echo 'export EDITOR=nvim' >> ~/.bashrc
 echo "export PS1='\u@\h:\w\$ '" >> ~/.bashrc # Full user@host:path
 echo "./vmsplash.sh" >> ~/.bashrc
+
+echo "./vmsplash.sh"
+
+echo "Cloning Neovim config..."
+# Replace with your actual repo URL
+if [ ! -d "$HOME/.config/nvim" ]; then
+  git clone https://github.com/BruzaTom/tomsnvim.git "$HOME/.config/nvim"
+else
+  echo "Neovim config already exists at ~/.config/nvim"
+fi
+
 echo "vmtools installed successfully."
 
