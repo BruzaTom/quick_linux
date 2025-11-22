@@ -20,6 +20,8 @@ chmod +x "$DEST_DIR/$COPY_FILE"
 chmod +x "$REPO_DIR/$EXEC_FILE"
 "$REPO_DIR/$EXEC_FILE"
 
+rm setup.sh
+
 # Remove the repo directory
 rm -rf "$REPO_DIR"
 
