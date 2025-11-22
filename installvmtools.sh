@@ -11,13 +11,14 @@ DEST_DIR="$HOME/.config/tomux"
 # Clone the repo
 git clone "$REPO_URL" "$REPO_DIR"
 
-# Execute the file (make sure it's executable)
-chmod +x "$REPO_DIR/$EXEC_FILE"
-"$REPO_DIR/$EXEC_FILE"
-
 # Copy another file to destination
 mkdir -p "$DEST_DIR"
 cp "$REPO_DIR/$COPY_FILE" "$DEST_DIR/"
+chmod +x "$REPO_DIR/$COPY_FILE" "$DEST_DIR/"
+
+# Execute the file (make sure it's executable)
+chmod +x "$REPO_DIR/$EXEC_FILE"
+"$REPO_DIR/$EXEC_FILE"
 
 # Remove the repo directory
 rm -rf "$REPO_DIR"
