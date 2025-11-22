@@ -5,7 +5,7 @@ set -e  # exit immediately on error
 REPO_URL="https://github.com/BruzaTom/quick_linux.git"
 REPO_DIR="quick_linux"
 EXEC_FILE="vmtools.sh"
-COPY_FILE="vmsplash.sh"
+COPY_FILE="check_installs.sh"
 DEST_DIR="$HOME/.config/tomux"
 
 # Clone the repo
