@@ -19,9 +19,9 @@ sudo pacman -S --needed --noconfirm \
 
 echo 'export EDITOR=nvim' >> ~/.bashrc
 echo "export PS1='\u@\h:\w\$ '" >> ~/.bashrc # Full user@host:path
-echo "./.config/tomux/vmsplash.sh" >> ~/.bashrc
+echo "./.config/tomux/check_installs.sh" >> ~/.bashrc
 
-echo "./tomux/vmsplash.sh"
+echo "./tomux/check_installs.sh"
 
 echo "Cloning Neovim config..."
 # Replace with your actual repo URL
