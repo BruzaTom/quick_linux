@@ -14,7 +14,7 @@ git clone "$REPO_URL" "$REPO_DIR"
 # Copy another file to destination
 mkdir -p "$DEST_DIR"
 cp "$REPO_DIR/$COPY_FILE" "$DEST_DIR/"
-chmod +x "$REPO_DIR/$COPY_FILE" "$DEST_DIR/"
+chmod +x "$DEST_DIR/$COPY_FILE"
 
 # Execute the file (make sure it's executable)
 chmod +x "$REPO_DIR/$EXEC_FILE"
